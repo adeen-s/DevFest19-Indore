@@ -29,9 +29,14 @@
       "label": "Team"
     },
     {
-      "route": "cfp",
+      "route": "cfs",
       "permalink": "https://sessionize.com/devfest19-indore",
       "label": "Call for Speakers"
+    },
+    {
+      "route": "cfp",
+      "permalink": "https://sessionize.com/devfest19-cfp",
+      "label": "Call for Papers"
     },
     {
       "route": "codeOfConduct",

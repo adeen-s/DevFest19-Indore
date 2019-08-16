@@ -54,8 +54,8 @@
       "fontColor": "#FFF"
     },
     "blog": {
-      "title": "Blog",
-      "metaDescription": "Read stories from our team",
+      "title": "Events",
+      "metaDescription": "Read stories from our previous events",
       "background": {
         "color": "#FFF"
       },

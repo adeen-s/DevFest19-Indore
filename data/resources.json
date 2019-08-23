@@ -23,7 +23,8 @@
     "time": "Time",
     "faq": "/data/faq.md",
     "cod": "/data/cod.md",
-    "cfp": "https://sessionize.com/devfest19-indore",
+    "cfs": "https://sessionize.com/devfest19-indore",
+    "cfp": "https://sessionize.com/devfest19-cfp",
     "mySchedule": {
         "title": "My Schedule",
         "browseSession": "Browse sessions"
@@ -60,8 +61,13 @@
                     "newTab": true
                 },
                 {
-                    "name": "Call for Papers",
+                    "name": "Call for Speakers",
                     "url": "https://sessionize.com/devfest19-indore",
+                    "newTab": true
+                },
+                {
+                    "name": "Call for Papers",
+                    "url": "https://sessionize.com/devfest19-cfp",
                     "newTab": true
                 }
             ]

@@ -148,7 +148,6 @@ function lint() {
   return gulp.src([
     `scripts/**/*.js`,
     `src/**/*.{html,js}`,
-    'index.html',
   ])
     .pipe(eslint())
     .pipe(eslint.format(friendlyFormatter))

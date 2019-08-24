@@ -35,7 +35,7 @@
     },
     {
       "route": "cfp",
-      "permalink": "https://sessionize.com/devfest19-cfp",
+      "permalink": "https://docs.google.com/forms/d/e/1FAIpQLSfgK9Wl4ePgZ_hoSbX2GMuzu77OQohZ78HQlFoASAu9wmtHGQ/viewform?usp=sf_link",
       "label": "Call for Papers"
     },
     {
@@ -71,7 +71,7 @@
       "fontColor": "#424242"
     },
     "previousSpeakers": {
-      "title": "Previous Speakers",
+      "title": "Full List to be announced soon",
       "metaDescription": "Check who was with us last years",
       "background": {
         "color": "#FFF"

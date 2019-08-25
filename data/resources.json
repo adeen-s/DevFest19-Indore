@@ -79,12 +79,12 @@
         "title": "What you need to know, before you ask.",
         "callToAction": {
             "featuredSessions": {
-                "description": "GDG DevFest Indore brings together the world class experts in ML, Web and Cloud technologies to Indore for a day of sessions, workshops and showcases.",
+                "description": "GDG Indore is an initiative taken by all the technical enthusiasts of Indore to unite all the developers and experts from Indore, working on various technologies like ML, Web, Cloud, Automation, etc.",
                 "label": "Check out GDG Indore",
                 "link": "https://www.meetup.com/GoogleDeveloperGroupIndore/"
             },
             "howItWas": {
-                "description": "Described as Central India's largest Tech Conference, our team creates DevFest to be the best place for experience sharing in a phenomenal atmosphere.",
+                "description": "Devfest is one of  the largest Tech Conferences organised all over India. This time Devfest Indore brings to you a global platform, with many national and international speakers, to learn more about the emerging technologies and enhance your skills.",
                 "label": "See how it was in 2018",
                 "youtubeId": "s9IO5SAazzw"
             }
@@ -212,7 +212,7 @@
         "image": "/images/team.jpg",
         "blocks": [{
                 "title": "Organizer",
-                "description": "<a href='https://gdgindore.in' target='_blank'>GDG Indore</a> with support of GDG Cloud, WTM Indore, and other local tech communities",
+                "description": "We as a family aspire to make Indore,  one of the technological hubs of India. We dream of working together and lifting each other up to reach to their path of success with all our combined efforts. For all the technical enthusiasts, joining this community is the best choice to get an extra edge over others and always be updated about the emerging technologies.",
                 "callToAction": {
                     "label": "Open team page",
                     "link": "/team"

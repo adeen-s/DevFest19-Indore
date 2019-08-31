@@ -57,7 +57,12 @@
             "title": "Event Resources",
             "links": [{
                     "name": "Call for Sponsors",
-                    "url": "https://forms.gle/VvEDjn25UsN2KrBd6",
+                    "url": "https://docs.google.com/forms/d/e/1FAIpQLSe3zXhDpe3RAGOOzM0N2Qzpta7TrrDtGwwtBzF_Hj6s0v4EGA/viewform",
+                    "newTab": true
+                },
+                {
+                    "name": "Call for Ecosystem Partners",
+                    "url": "https://forms.gle/iQiUbxuwMsEgadXt6",
                     "newTab": true
                 },
                 {
@@ -145,7 +150,7 @@
         }
     },
     "previousSpeakersBlock": {
-        "title": "Full list of speakers to be announced soon",
+        "title": "",
         "callToAction": {
             "label": "View all",
             "link": "/previous-speakers/"

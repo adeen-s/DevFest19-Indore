@@ -115,7 +115,7 @@
     },
     "ticketsBlock": {
         "title": "Tickets",
-        "ticketsDetails": "All tickets include access to the conference as well as lunch at the venue",
+        "ticketsDetails": "WTM, Professional and Student include access to the conference as well as lunch at the venue. Lunch for Regular Bird tickets are subject to first come first serve basis",
         "soldOut": "You missed it!",
         "notAvailableYet": "Not available yet",
         "save": "Save ${discount}% today"

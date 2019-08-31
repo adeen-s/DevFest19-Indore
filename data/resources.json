@@ -92,7 +92,7 @@
         "statisticsBlock": {
             "attendees": {
                 "label": "Attendees",
-                "number": "600"
+                "number": "600+"
             },
             "days": {
                 "label": "Day",

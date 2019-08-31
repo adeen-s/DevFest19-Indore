@@ -34,11 +34,6 @@
       "label": "Call for Speakers"
     },
     {
-      "route": "cfp",
-      "permalink": "https://docs.google.com/forms/d/e/1FAIpQLSfgK9Wl4ePgZ_hoSbX2GMuzu77OQohZ78HQlFoASAu9wmtHGQ/viewform?usp=sf_link",
-      "label": "Call for Papers"
-    },
-    {
       "route": "codeOfConduct",
       "permalink": "/cod/",
       "label": "Code Of Conduct"
@@ -113,20 +108,20 @@
   },
   "location": {
     "label": "Location",
-    "name": "TBD",
+    "name": "Amber Gardens, Indore",
     "city": "Indore",
     "short": "Indore, India",
-    "address": "TBD",
+    "address": "Near Best Price, Indore",
     "pointer": {
-      "latitude": 0,
-      "longitude": 0,
-      "zoom": 9
+      "latitude": 22.7512278,
+      "longitude": 75.9321241,
+      "zoom": 15
     },
     "mapCenter": {
-      "latitude": 23,
-      "longitude": 73
+      "latitude": 22.7512278,
+      "longitude": 75.9321241
     },
-    "description": "TBD"
+    "description": "Amber Gardens"
   },
   "mediaQueries": {
     "xs": {

@@ -115,7 +115,7 @@
     },
     "ticketsBlock": {
         "title": "Tickets",
-        "ticketsDetails": "Access to conference sections, breaks, lunch and party are determined by the ticket types. Accommodation is NOT a part of the tickets.",
+        "ticketsDetails": "All tickets include access to the conference as well as lunch at the venue",
         "soldOut": "You missed it!",
         "notAvailableYet": "Not available yet",
         "save": "Save ${discount}% today"

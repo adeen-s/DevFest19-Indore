@@ -4,7 +4,7 @@
 <link rel="import" href="./shared-styles.html">
 
 <dom-module id="header-toolbar">
-    <template>
+  <template>
     <style is="custom-style" include="shared-styles flex flex-alignment positioning"></style>
 
     <style>
@@ -28,7 +28,7 @@
 
       :host([transparent]) .toolbar-logo {
         opacity: var(--hero-logo-opacity, 1);
-        background-color:transparent;
+        background-color: transparent;
       }
 
       app-toolbar {
@@ -229,125 +229,126 @@
 
   </template>
 
-    <script>
-        class HeaderToolbar extends ReduxMixin(Polymer.Element) {
-            static get is() {
-                return 'header-toolbar';
-            }
+  <script>
 
-            static get properties() {
-                return {
-                    route: {
-                        type: String,
-                        statePath: 'routing',
-                    },
-                    viewport: {
-                        type: Object,
-                        statePath: 'ui.viewport',
-                    },
-                    heroSettings: {
-                        type: Object,
-                        statePath: 'ui.heroSettings',
-                        observer: '_setToolbarSettings',
-                    },
-                    dialogs: {
-                        type: Object,
-                        statePath: 'dialogs',
-                    },
-                    notifications: {
-                        type: Boolean,
-                        statePath: 'notifications',
-                    },
-                    user: {
-                        type: Object,
-                        statePath: 'user',
-                    },
-                    tickets: {
-                        type: Object,
-                        statePath: 'tickets',
-                    },
-                };
-            }
+    class HeaderToolbar extends ReduxMixin(Polymer.Element) {
+      static get is() {
+        return 'header-toolbar';
+      }
 
-            static get observers() {
-                return [
-                    '_authStatusChanged(user.signedIn)',
-                ];
-            }
+      static get properties() {
+        return {
+          route: {
+            type: String,
+            statePath: 'routing',
+          },
+          viewport: {
+            type: Object,
+            statePath: 'ui.viewport',
+          },
+          heroSettings: {
+            type: Object,
+            statePath: 'ui.heroSettings',
+            observer: '_setToolbarSettings',
+          },
+          dialogs: {
+            type: Object,
+            statePath: 'dialogs',
+          },
+          notifications: {
+            type: Boolean,
+            statePath: 'notifications',
+          },
+          user: {
+            type: Object,
+            statePath: 'user',
+          },
+          tickets: {
+            type: Object,
+            statePath: 'tickets',
+          },
+        };
+      }
 
-            connectedCallback() {
-                super.connectedCallback();
-                // eslint-disable-next-line no-undef
-                HOVERBOARD.Elements.HeaderToolbar = this;
-            }
+      static get observers() {
+        return [
+          '_authStatusChanged(user.signedIn)',
+        ];
+      }
 
-            openDrawer() {
-                uiActions.toggleDrawer(true);
-            }
+      connectedCallback() {
+        super.connectedCallback();
+        // eslint-disable-next-line no-undef
+        HOVERBOARD.Elements.HeaderToolbar = this;
+      }
 
-            closeDrawer() {
-                uiActions.toggleDrawer(false);
-            }
+      openDrawer() {
+        uiActions.toggleDrawer(true);
+      }
 
-            signIn() {
-                dialogsActions.openDialog(DIALOGS.SIGNIN);
-            }
+      closeDrawer() {
+        uiActions.toggleDrawer(false);
+      }
 
-            signOut() {
-                userActions.signOut();
-            }
+      signIn() {
+        dialogsActions.openDialog(DIALOGS.SIGNIN);
+      }
 
-            _authStatusChanged(signedIn) {
-                if (this.dialogs.signin.isOpened) {
-                    dialogsActions.closeDialog(DIALOGS.SIGNIN);
-                }
-            }
+      signOut() {
+        userActions.signOut();
+      }
 
-            _toggleNotifications() {
-                this._closeNotificationMenu();
-                if (this.notifications.status === NOTIFICATIONS_STATUS.GRANTED) {
-                    this.dispatch(notificationsActions.unsubscribe(this.notifications.token));
-                    return;
-                }
-                this.dispatch(notificationsActions.requestPermission());
-            }
-
-            _getNotificationsIcon(status) {
-                return status === NOTIFICATIONS_STATUS.DEFAULT ?
-                    'bell-outline' :
-                    status === NOTIFICATIONS_STATUS.GRANTED ?
-                    'bell' :
-                    'bell-off';
-            }
-
-            _hideNotificationBlock(status, blockStatus) {
-                return status !== NOTIFICATIONS_STATUS[blockStatus];
-            }
-
-            _closeNotificationMenu() {
-                this.$.notificationsMenu.close();
-            }
-
-            _isAccountIconHidden(userSignedIn, isTabletPlus) {
-                return userSignedIn || isTabletPlus;
-            }
-
-            _getTicketUrl(tickets) {
-                if (!tickets.list.length) return '';
-                const availableTicket = tickets.list.filter((ticket) => ticket.available)[0];
-                return availableTicket ? availableTicket.url : tickets.list[0].url;
-            }
-
-            _setToolbarSettings(settings) {
-                if (!settings) return;
-                this.updateStyles({
-                    '--hero-font-color': settings.fontColor || '',
-                    '--hero-logo-opacity': settings.hideLogo ? 0 : 1,
-                    '--hero-logo-color': settings.backgroundImage ? '#fff' : 'var(--default-primary-color)',
-                });
-            }
+      _authStatusChanged(signedIn) {
+        if (this.dialogs.signin.isOpened) {
+          dialogsActions.closeDialog(DIALOGS.SIGNIN);
         }
+      }
 
-        customElements.define(HeaderToolbar.is, HeaderToolbar);
-    </script>
+      _toggleNotifications() {
+        this._closeNotificationMenu();
+        if (this.notifications.status === NOTIFICATIONS_STATUS.GRANTED) {
+          this.dispatch(notificationsActions.unsubscribe(this.notifications.token));
+          return;
+        }
+        this.dispatch(notificationsActions.requestPermission());
+      }
+
+      _getNotificationsIcon(status) {
+        return status === NOTIFICATIONS_STATUS.DEFAULT
+          ? 'bell-outline'
+          : status === NOTIFICATIONS_STATUS.GRANTED
+            ? 'bell'
+            : 'bell-off';
+      }
+
+      _hideNotificationBlock(status, blockStatus) {
+        return status !== NOTIFICATIONS_STATUS[blockStatus];
+      }
+
+      _closeNotificationMenu() {
+        this.$.notificationsMenu.close();
+      }
+
+      _isAccountIconHidden(userSignedIn, isTabletPlus) {
+        return userSignedIn || isTabletPlus;
+      }
+
+      _getTicketUrl(tickets) {
+        if (!tickets.list.length) return '';
+        const availableTicket = tickets.list.filter((ticket) => ticket.available)[0];
+        return availableTicket ? availableTicket.url : tickets.list[0].url;
+      }
+
+      _setToolbarSettings(settings) {
+        if (!settings) return;
+        this.updateStyles({
+          '--hero-font-color': settings.fontColor || '',
+          '--hero-logo-opacity': settings.hideLogo ? 0 : 1,
+          '--hero-logo-color': settings.backgroundImage ? '#fff' : 'var(--default-primary-color)',
+        });
+      }
+    }
+
+    customElements.define(HeaderToolbar.is, HeaderToolbar);
+  </script>
 </dom-module>

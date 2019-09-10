@@ -24,20 +24,21 @@
       "label": "Home"
     },
     {
+      "route": "speakers",
+      "permalink": "/speakers/",
+      "label": "Speakers"
+    },
+    {
+      "route": "schedule",
+      "permalink": "/schedule/",
+      "label": "Schedule"
+    },
+    {
       "route": "team",
       "permalink": "/team/",
       "label": "Team"
-    },
-    {
-      "route": "cfs",
-      "permalink": "https://sessionize.com/devfest19-indore",
-      "label": "Call for Speakers"
-    },
-    {
-      "route": "codeOfConduct",
-      "permalink": "/cod/",
-      "label": "Code Of Conduct"
     }
+    
   ],
   "heroSettings": {
     "home": {

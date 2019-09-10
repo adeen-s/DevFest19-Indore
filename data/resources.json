@@ -47,8 +47,18 @@
                     "newTab": true
                 },
                 {
+                    "name": "Speakers",
+                    "url": "https://devfest.gdgindore.in/speakers/",
+                    "newTab": true
+                },
+                {
+                    "name": "Schedule",
+                    "url": "https://devfest.gdgindore.in/schedule/",
+                    "newTab": true
+                },
+                {
                     "name": "Meet the Team",
-                    "url": "https://gdgindore.in/team/",
+                    "url": "https://devfest.gdgindore.in/team/",
                     "newTab": true
                 }
             ]
@@ -63,11 +73,6 @@
                 {
                     "name": "Call for Ecosystem Partners",
                     "url": "https://forms.gle/iQiUbxuwMsEgadXt6",
-                    "newTab": true
-                },
-                {
-                    "name": "Call for Speakers",
-                    "url": "https://sessionize.com/devfest19-indore",
                     "newTab": true
                 },
                 {
